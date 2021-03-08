@@ -19,9 +19,9 @@ Circuit Simulation – ngspice
 
 For installation of open source EDA tools refer *[here](https://www.vlsisystemdesign.com/vsd-a-complete-guide-to-install-open-source-eda-tools/)*
 
-# Getting started with open source tools
+# Getting started with Open Source tools
 
-You may start the physical design flow by first ensuring all the tools are installed properly and are working correctly by invoking them. 
+You may start your physical design flow by first ensuring all the tools are installed properly and are working correctly by invoking them. 
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/01_invoke_yosys.png)
@@ -35,7 +35,7 @@ Below you see the path the sta tool is linked to.
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/03_sta_path.png)
 
 
-Now we use VSDFLOW, which is built using Open Source Hardware Tools that takes in the RTL and gives you GDSII  layout, performance and area metrics of your design.
+Now we use *[VSDFLOW](https://github.com/kunalg123/vsdflow)*, which is built using Open Source Hardware Tools, that takes in the RTL and gives you GDSII  layout, performance and area metrics of your design.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/04_git_clone_vsdflow.png)
@@ -47,7 +47,7 @@ Change the directory to vsdflow and execute the spi_slave  testcase.
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/05_spi_slave_design_details.png)
  
 
-You will see that the qflow starts to implement all the stages of physical design and output files getting created.
+You will see that qflow starts implementing all the stages of physical design and output files are getting created.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/06_spi_slave_qflow.png)
