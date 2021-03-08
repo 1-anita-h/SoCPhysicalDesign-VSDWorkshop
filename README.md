@@ -19,7 +19,8 @@ Circuit Simulation – ngspice
 
 For installation of open source EDA tools refer *[here](https://www.vlsisystemdesign.com/vsd-a-complete-guide-to-install-open-source-eda-tools/)*
 
-# Study and review various components of RISC-V based picoSoC
+# Getting started with open source tools
+
 You may start the physical design flow by first ensuring all the tools are installed properly and are working correctly by invoking them. 
 
 
@@ -70,6 +71,9 @@ Use the tkcon window to know the area of the design by typing box. (You can furt
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/09_tkcon_output_area.png)
 
 
+# PnR flow using qflow
+
+
 Now that all the tools are working fine, you can create your new project directory containing source, synthesis and layout directories in it. Copy the picorv32.v file from vsdflow directory to the now created source directory.  
 
 
@@ -102,7 +106,6 @@ Press the Run button and you will see the graywolf window showing the placement 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/15_placement.png)
 
 
-# Chip planning strategies and introduction to foundry library cells
 
 You can press the Edit Layout button in the Qflow manager window to view the layout or you can invoke qflow in your project directory (use qflow diplay picorv32 & command) to view the layout window as shown below. Select the whole chip by first moving the cursor to the bottom left and left mouse click and then moving to top right and right mouse click, then press Shift+i.
 
@@ -116,7 +119,7 @@ Now you will see the selected chip are in the tkcon window.
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/17_chip_area.png)
 
 
-# Design and Characterize one library cell using Magic Layout tool and ngspice
+# Library cell Characterization using Magic Layout tool and ngspice
 
 
 For SPICE simulations clone *[git link](https://github.com/kunalg123/ngspice_labs/)*. To see inv SPICE deck, go the ngspice_labs directory, open the inv.spice file to know the width of PMOS and NMOS transistors.  SPICE deck has list of circuit nodes and the elements between them, generates a series of nodal equations, and solves for the voltages,  statements identifying which mode(s) the circuit should solve for: DC, AC, or transient analysis.
@@ -176,6 +179,8 @@ Calculate the difference between these x0 values to obtain the pulsewidth. Here 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/26_fn_prelayout_pulse_width.png)
 
 
+# Layout and Extraction
+
 Invoke the magic tool by mentioning the tech file. Source the draw_fn.tcl file which has already done layout example and observe the layout. This file has the information to create n-well area, p-diffusion area, polysilicon stripes etc.
 
 
@@ -222,7 +227,7 @@ Simulate fn_postlayout.spice and observe the plot that has the changed pulse wid
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/35_plot_fn_postlayout.jpg)
 
 
-# Pre-Layout Timing Analysis and importance of good clock tree
+# Pre-Layout Timing Analysis 
 
 
 Open the inv_tran.spice file and observe the input rise and fall slew values and the output load.
@@ -314,3 +319,4 @@ Open the post_sta.log file and note the post-layout frequency. You will observe 
 
 
 # Acknowledgement
+KUNAL GHOSH Director and Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd
