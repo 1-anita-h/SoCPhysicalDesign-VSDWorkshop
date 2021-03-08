@@ -74,7 +74,7 @@ Use the tkcon window to know the area of the design by typing box.
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/09_tkcon_output_area.png)
 
 
-# PnR flow using Qflow
+# PnR using Qflow
 
 
 Now that all the tools are working fine, you can create your new project directory containing source, synthesis and layout directories in it. Copy the picorv32.v file from vsdflow directory to the now created source directory.  
@@ -204,7 +204,7 @@ Now open the fn_postlayout.mag in magic.
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/30_magic_fn_postlayout.png)
 
 
-Observe the area of the layout in tkcon window.
+Area of the layout can be seen in the tkcon window.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/31_design_area.jpg)
@@ -315,7 +315,7 @@ Open the sta log file and note the pre-layout frequency.
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/48_prelayout_frequency.png)
 
 
-Open the post_sta.log file and note the post-layout frequency. You will observe the drop in frequency which is due to the parasitics.
+Open the post_sta.log file to note the post-layout frequency. You will see the drop in frequency, which is due to the parasitics.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/49_postlayout_frequency.png)
