@@ -319,4 +319,4 @@ Open the post_sta.log file and note the post-layout frequency. You will observe 
 
 
 # Acknowledgement
-KUNAL GHOSH Director and Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd
+Kunal Ghosh, Director and Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd
