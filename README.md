@@ -287,20 +287,34 @@ The delay templates in the look up tables that show the number of entries for ea
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/44_invx1_delay_template.png)
 
 
-Create a clock named clk with a period of 2.5, write the sdc file accordingly, in the prelayout_sta.conf file read the lib file, Verilog file, link design and the read sdc.
+Write sdc file to create a clock named clk with a period of 2.5. In another prelayout_sta.conf file read the lib file, Verilog file, link design and the read sdc.
 
 
-![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/50_create_confg.png)
+![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/45_create_confg.png)
 
 
 Invoke the sta tool and obtain the timing reports and observe the slack, data arrival and data required times from the reports.
 
 
-![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/45_report_checks.jpg)
+![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/50_slack_at_rt.png)
 
 
-In the sta terminal, set all the clocks as propagated clocks and check timing reports and observe changes in the slack values. In the timing reports observe the launch clock network delay and capture clock network delay values. Observe the hold time and hold slack by reporting the hold violated paths. 
+Set all the clocks as propagated clocks and check timing reports and observe changes in the slack values.
 
+
+![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/51_propagated_clocks.png)
+
+
+Observe the launch clock network delay and capture clock network delay values.
+
+
+![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/52_capture_clock_delay.png)
+
+
+Observe the hold time and hold slack by using the command report_checks -path_delay min -digits 4. 
+
+
+![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/53_lib_hold_time.png)
 
 
 # Final Steps for RTL2GDS
