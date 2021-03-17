@@ -311,7 +311,7 @@ Observe the changes in the slack, the launch clock network delay and capture clo
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/52_capture_clock_delay.png)
 
 
-Use the command report_checks -path_delay min -digits 4 to get the hold time and hold slack values.
+Use the command report_checks -path_delay min -digits 4 to get the hold timing report. Below you see the library hold time and hold slack values.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/53_lib_hold_time.png)
