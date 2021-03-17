@@ -239,7 +239,7 @@ Open the inv_tran.spice file and observe the input rise and fall slew values and
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/36_input_rise_and_fall_slew.png)
 
 
-Simulate inv_tran.spice in ngspice and observe the rise delay.
+Simulate inv_tran.spice in ngspice and observe the rise delay. Here it is 1.136ns - 1.015ns = 121ps. 
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/37_rise_delay.png)
@@ -251,7 +251,7 @@ Modify the output load in inv_tran.spice.
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/38_edit_output_load.png)
 
 
-Observe the new rise delay by simulating inv_tran.spice in ngspice again. You can see that the rise delay increases with increase in the output load.
+Observe the new rise delay by simulating inv_tran.spice in ngspice again. Here it is 1.234ns - 1.015ns = 219ps. You can see that the rise delay increases with increase in the output load.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/39_plot_edited_rise_delay.png)
