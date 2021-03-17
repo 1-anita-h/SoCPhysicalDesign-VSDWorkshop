@@ -233,7 +233,7 @@ Simulate fn_postlayout.spice and observe the plot that has the changed pulse wid
 # Pre-Layout Timing Analysis 
 
 
-Open the inv_tran.spice file and observe the input rise and fall slew values and the output load.
+The input rise and fall slew values and the output load value can be obtained in the inv_tran.spice file.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/36_input_rise_and_fall_slew.png)
@@ -293,25 +293,25 @@ Write sdc file to create a clock named clk with a period of 2.5. In another prel
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/45_create_confg.png)
 
 
-Invoke the sta tool and obtain the timing reports and observe the slack, data arrival and data required times from the reports.
+Invoke the sta tool and obtain the timing reports that shows the slack, data arrival and data required times.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/50_slack_at_rt.png)
 
 
-Set all the clocks as propagated clocks and check timing reports and observe changes in the slack values.
+Set all the clocks as propagated clocks and check timing reports again.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/51_propagated_clocks.png)
 
 
-Observe the launch clock network delay and capture clock network delay values.
+Observe the changes in the slack, the launch clock network delay and capture clock network delay values.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/52_capture_clock_delay.png)
 
 
-Observe the hold time and hold slack by using the command report_checks -path_delay min -digits 4. 
+Use the command report_checks -path_delay min -digits 4 to get the hold time and hold slack values.
 
 
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/53_lib_hold_time.png)
