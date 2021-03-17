@@ -287,7 +287,12 @@ The delay templates in the look up tables that show the number of entries for ea
 ![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/44_invx1_delay_template.png)
 
 
-Create a clock named clk with a period of 2.5, edit the sdc file accordingly. in the prelayout_sta.conf file read the lib file, Verilog file, link design and the read sdc.
+Create a clock named clk with a period of 2.5, write the sdc file accordingly, in the prelayout_sta.conf file read the lib file, Verilog file, link design and the read sdc.
+
+
+![alt text](https://github.com/1-anita-h/SoCPhysicalDesign-VSDWorkshop/blob/main/Images/50_create_confg.png)
+
+
 Invoke the sta tool and obtain the timing reports and observe the slack, data arrival and data required times from the reports.
 
 
